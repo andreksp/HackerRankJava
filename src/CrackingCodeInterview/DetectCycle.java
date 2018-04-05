@@ -24,13 +24,10 @@ public class DetectCycle
         if ( node == null)
             return false;
 
-        //HashMap<Integer, Integer> hm = new HashMap<Integer, Integer>();
-
         List<Node> list = new ArrayList<Node>();
 
         while( t != null)
         {
-            //hm.put(t.data, t.data);
             list.add(t);
 
             if(count > 100)
@@ -38,14 +35,12 @@ public class DetectCycle
                 return true;
             }
 
-
             t = t.next;
 
             if ( list.contains(t))
             {
                 return true;
             }
-
 
             count++;
         }

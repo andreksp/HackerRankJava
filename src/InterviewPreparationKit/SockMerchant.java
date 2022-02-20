@@ -34,7 +34,21 @@ public class SockMerchant {
     }
 
 
+    private String str;
+    private boolean bln;
+
     public static void main(String[] args) throws IOException {
+
+        int[] arr1;
+        int[] arr2 = new int[3];
+        char[] arr3 = {'a', 'b'};
+
+        arr1 = arr2;
+
+        SockMerchant sm = new SockMerchant();
+        System.out.println("TestsStr" + sm.str);
+        System.out.println("testeBollean" + sm.bln);
+
         Scanner scan = new Scanner(System.in);
 
         int n = scan.nextInt();
